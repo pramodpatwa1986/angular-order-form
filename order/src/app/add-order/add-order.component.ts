@@ -41,7 +41,9 @@ export class AddOrderComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log( this.orderFormGroup);
+    console.log( JSON.stringify(this.orderFormGroup.value));
+    console.log( JSON.stringify( this.orderFormGroup.get('formArray').get([0]).value));
+
   }
 
 }
